@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+#div12 .fa{
+    color:white;
+}
+body{
+  overflow: scroll;
+}
+#div12
+{
+  background-color:blue;
+  width:35%;
+  float:right;
+  height:320px;
+  border-left:1px solid darkcyan;
+}
+#div11{
+  background-color:pink;
+  width:65%;
+  float:left;
+  height:320px;
+}
+#div5{
+  height:150px;
+  width:100%;
+  overflow: scroll;
+  background-color:white;
+}
+#div1
+{
+    color:black;
+  overflow:hidden;
+  width:100%;
+  margin:0 auto;
+  height:120px;
+  background-color:aqua;
+}
+.hovertext{
+    position:relative;
+    border-bottom:1px dotted black;
+}
+.hovertext:before{
+    content:attr(data-hover);
+    visibility:hidden;
+    opacity:0;
+width:140px;
+background-color: black;
+color:#fff;
+text-align:center;
+border-radius:5px;
+padding:5px 0;
+transition:opacity 1s ease-in-out;
+position:absolute;
+z-index:1;
+left:0;
+top:110%;
+}
+.fa{
+  color:white;
+}
+.hovertext:hover:before{
+    opacity:1;
+    visibility:visible;
+}
+#profileImage{
+    height:60px;
+    width:80px;
+}
+#profileImage:hover{
+ cursor: pointer;
+ opacity:0;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 80vh;
+}
+#footer{
+background-color:darkcyan;
+width:100%;
+height:40px;
+color:white;
+text-align:center;
+font-style: bold;
+padding:5px;
+position:fixed;
+bottom:0px;
+right:0px;
+    }
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: #3E8DA8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar{
+  /* overflow:visible; */
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+}
+ #footer div.foot{
+        float:right;
+        margin-right:10px;
+        display: inline;
+    }
+li:hover{
+    background-color: black;
+    padding-right:4px;
+}
+.navbar .logo a{
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: #3E8DA8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.a{
+  color:gray;
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow{
+  line-height: 40px;
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu{
+  display: block;
+}
+.navbar .search-box{
+  position: relative;
+   height: 40px;
+  width: 40px;
+}
+.navbar .search-box i{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 60px;
+  width: 300px;
+  background: #3E8DA8;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+  top: 65px;
+  opacity: 1;
+  pointer-events: auto;
+  background: #3E8DA8;
+}
+.search-box .input-box::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #3E8DA8;
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.search-box .input-box input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:  #3E8DA8;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  display: none;
+  position: relative;
+  left: 0;
+}
+.navbar .links li .sub-menu .more-sub-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(0deg);
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+  }
+  .navbar .links li .sub-menu .more span{
+    display: flex;
+    align-items: center;
+  }
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: none;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .htmlCss-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .htmlcss-arrow,
+    .navbar .nav-links.show3 .links .js-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .more-arrow{
+      transform: rotate(90deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+     </style>
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+        <span class="hovertext" data-hover="SWAROOPA">
+        <image id="profileImage" src="me1.jpg"alt="SWAROOPA"> 
+        </span>
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">My Website</a>
+    </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">My Website</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><i class="fa fa-home"></i>&nbsp;<a href="wt home page.html">HOME</a></li>
+          <li><i class="fa fa-book"></i>&nbsp;<a href="#">EXAM</a><i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="wt exam login.html">LOGIN</a></li>
+              <li><a href="wt exam register.html">REGISTER</a></li></ul></li>
+          <li>
+            <i class="fa fa-wrench"></i>&nbsp;<a href="#">BRANCHES</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">MECH</a></li>
+              <li><a href="#">ECE</a></li>
+              <li class="more">
+                <span><a href="#">CSE</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">FACULTY</a></li>
+                  <li><a href="wt student.html">STUDENT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>&nbsp;<a href="wt contact.html">CONTACT</a>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box" id="sear">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+    <div id="div1">
+<center>
+    <h1><u>CONTACT US</u></h1>
+    <b>We love questions and feedback-and we're happy to help!
+    Here are some ways to contact us</b>
+</center>
+</div>
+<div id="div11">
+  <center>
+    <h3><u>Send us a message</u></h3>
+    send us a message and will respond within 24 hours.<br><br>
+    <b>Full Name:&nbsp;<input type="text" placeholder="Type full name here"><br>
+    Email:&nbsp;<input type="email" placeholder="Type email here"><br>
+    Telephone:&nbsp;<input type="number" placeholder="Phone Number"><br><br>
+    <textarea rows="4" cols="50" placeholder="Type your message here"></textarea>
+      <button value="SUBMIT">SUBMIT</button> </b>
+</center>
+</div>
+    <div id="div12" style="color:white">
+    <center>
+        <h3><u>CONTACT INFO</u></h3><hr><br><br>
+        <b>
+    <i class="fa fa-map-marker"></i>&nbsp;&nbsp; Mylavaram road,IIIT Nuzvid<br><br>
+    <i class="fa fa-envelope"></i>&nbsp;&nbsp;n180275@rguktn.ac.in<br><br>
+    <i class="fa fa-phone"></i>&nbsp;&nbsp;+91 8985852278<br><hr>
+    <big>
+        
+    <i class="fa fa-instagram"></i>&nbsp;&nbsp;<i class="fa fa-twitter"></i>&nbsp;&nbsp;
+    <i class="fa fa-facebook"></i>&nbsp;&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;&nbsp;
+</big>
+</center>
+    </div>
+    <div id="div5">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7639.355385710028!2d80.82005117249301!3d16.79270357509795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3675e5f312c661%3A0xab7189f421622491!2sIIIT%20Nuzvid%20Campus%2C%20Nuzividu%2C%20Andhra%20Pradesh%20521202!5e0!3m2!1sen!2sin!4v1657527564679!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500px"></iframe>
+    
+    </div>
+  </nav>
+  <footer id="footer">
+    <small><p><b>copy right &copy;2022 designed and developed by SWAROOPA</b></p></small>
+    <div class="foot">
+            <bold>View Count:</bold>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8012171&style=0006&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0"/>
+</div>
+    </footer>
+  <script type="text/javascript">
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    searchBox.addEventListener("click", ()=>{
+      navbar.classList.toggle("showInput");
+      if(navbar.classList.contains("showInput")){
+        searchBox.classList.replace("bx-search" ,"bx-x");
+      }else {
+        searchBox.classList.replace("bx-x" ,"bx-search");
+      }
+    });
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+    htmlcssArrow.onclick = function() {
+     navLinks.classList.toggle("show1");
+    }
+    let moreArrow = document.querySelector(".more-arrow");
+    moreArrow.onclick = function() {
+     navLinks.classList.toggle("show2");
+    }
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    </script>
+    <script type="text/javascript" src="jquery.js">
+        $("#profileImage").click(function(e) {
+            $("#imageUpload").click();
+        });
+        function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                  $('#profileImage').attr('src', 
+                     window.URL.createObjectURL(uploader.files[0]) );
+            }
+        }
+        $("#imageUpload").change(function(){
+            fasterPreview( this );
+        });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>
