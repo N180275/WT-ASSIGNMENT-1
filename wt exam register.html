@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  .div1{
+                width:60%;
+                border-radius:0px;
+                border-width:15px;
+                border-color: blueviolet;
+                 border-left:6px solid blueviolet;
+                 border-right:6px solid blueviolet;
+                 padding:15px;
+                 background-image:repeating-linear-gradient(to left,lightsalmon,palegreen,plum,beige,white,violet,lightblue,lightpink,moccasin,palegoldenrod,palegreen,paleturquoise);
+            }
+#div1
+{
+  overflow-y:scroll;
+  background-color:#23e3c2;
+  width:100%;
+  margin:0 auto;
+  height:550px;
+}
+#div1 #e13{
+            background-image:repeating-linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+            margin-left: 150px;
+            padding: 8px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            color:black;
+          }
+          #div1 li{
+                width:150px;
+                background-color:#DD5E89;
+                list-style-type: none;
+            }
+            #div1 #e13:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+          }
+    #div1{
+            background-color: aqua;
+            border-radius:10px;
+                border-width:10px;
+                 border:4px solid white;
+                 padding:6px;
+            }
+            #div1 input[type="text"]{
+			width: 500px;
+			height: 25px;
+			border: 1px solid black;
+			font-size: 20px;
+			margin-bottom: 4px;
+		}
+		#div1 input[type="password"]{
+			width: 470px;
+			height: 25px;
+			border: 1px solid black;
+		}
+		#div1 select{
+			font-size: 20px;
+		}
+		#div1 textarea{
+			padding: 0px 80px;
+		}
+    #div1 td{
+			font-size: 20px;
+			margin-top:20px; 
+		}
+    #div1 #e6{
+			padding: 5px 0px;
+			padding-right: 330px;
+			float: left;
+			margin-bottom: 0px;
+		}
+    #div1 #e12{
+            background-image:repeating-linear-gradient(to right, #FEAC5E 0%, #C779D0  51%, #FEAC5E  100%);
+            margin: 10px;
+            padding: 8px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;   
+            color:black;                                
+          }
+
+          #div1 #e12:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+
+.hovertext{
+    position:relative;
+    border-bottom:1px dotted black;
+}
+.hovertext:before{
+    content:attr(data-hover);
+    visibility:hidden;
+    opacity:0;
+width:140px;
+background-color: black;
+color:#fff;
+text-align:center;
+border-radius:5px;
+padding:5px 0;
+transition:opacity 1s ease-in-out;
+position:absolute;
+z-index:1;
+left:0;
+top:110%;
+}
+.fa{
+  color:white;
+}
+.hovertext:hover:before{
+    opacity:1;
+    visibility:visible;
+}
+#profileImage{
+    height:60px;
+    width:80px;
+}
+#profileImage:hover{
+ cursor: pointer;
+ opacity:0;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 80vh;
+}
+#footer{
+background-color:darkcyan;
+width:100%;
+height:40px;
+color:white;
+text-align:center;
+font-style: bold;
+padding:5px;
+position:fixed;
+bottom:0px;
+right:0px;
+    }
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: #3E8DA8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar{
+  /* overflow:visible; */
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 50px;
+}
+ #footer div.foot{
+        float:right;
+        margin-right:10px;
+        display: inline;
+    }
+li:hover{
+    background-color: black;
+    padding-right:4px;
+}
+.navbar .logo a{
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: #3E8DA8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.a{
+  color:gray;
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow{
+  line-height: 40px;
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu{
+  display: block;
+}
+.navbar .search-box{
+  position: relative;
+   height: 40px;
+  width: 40px;
+}
+.navbar .search-box i{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar .search-box .input-box{
+  position: absolute;
+  right: calc(100% - 40px);
+  top: 80px;
+  height: 60px;
+  width: 300px;
+  background: #3E8DA8;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.navbar.showInput .search-box .input-box{
+  top: 65px;
+  opacity: 1;
+  pointer-events: auto;
+  background: #3E8DA8;
+}
+.search-box .input-box::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #3E8DA8;
+  right: 10px;
+  top: -6px;
+  transform: rotate(45deg);
+}
+.search-box .input-box input{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  height: 35px;
+  width: 280px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:  #3E8DA8;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  display: none;
+  position: relative;
+  left: 0;
+}
+.navbar .links li .sub-menu .more-sub-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(0deg);
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+  }
+  .navbar .links li .sub-menu .more span{
+    display: flex;
+    align-items: center;
+  }
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: none;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .htmlCss-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .htmlcss-arrow,
+    .navbar .nav-links.show3 .links .js-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .more-arrow{
+      transform: rotate(90deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+     </style>
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+        <span class="hovertext" data-hover="SWAROOPA">
+        <image id="profileImage" src="me1.jpg"alt="SWAROOPA"> 
+        </span>
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">My Website</a>
+    </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">My Website</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><i class="fa fa-home"></i>&nbsp;<a href="wt home page.html">HOME</a></li>
+          <li><i class="fa fa-book"></i>&nbsp;<a href="#">EXAM</a><i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="wt exam login.html">LOGIN</a></li>
+              <li><a href="wt exam register.html">REGISTER</a></li></ul></li>
+          <li>
+            <i class="fa fa-wrench"></i>&nbsp;<a href="#">BRANCHES</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">MECH</a></li>
+              <li><a href="#">ECE</a></li>
+              <li class="more">
+                <span><a href="#">CSE</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">FACULTY</a></li>
+                  <li><a href="wt student.html">STUDENT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <i class="fa fa-phone"></i>&nbsp;<a href="#">CONTACT</a>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box" id="sear">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+    <div id="div1">
+
+      <center>
+        <div class="div1">
+            <form action="\js.php" method="post" onsubmit="return validation();" onreset="return reset_ok();">
+            <table>
+                <h1><b><big><u>STUDENT REGISTRATION FORM</u></big></b></h1>
+                <tr>
+                    <td>
+                        <big><b>First Name:</b></big>
+                  </td>
+                  <td>
+                        <input type="text" name="n" placeholder="Enter your first name" 
+                        id="e1" onmouseover="mouse1()" onmousedown="mouse2()">
+                    </td>
+                    <td><label id="l1" style="color:red;visibility:hidden">Invalid First name</label></td>
+                </tr> 
+             <tr>
+                    <td>
+                        <big><b>Middle Name:</b></big>
+                    </td>
+                    <td>
+                        <input type="text" id="e2" onmouseover="mouse3()" onmousedown="mouse4()">
+                    </td>
+                    <td><label id="l2" style="color:red;visibility:hidden">Invalid Middle Name</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <big><b>Last Name:</b></big>
+                    </td>
+                    <td>
+                        <input type="text"  placeholder="Enter your last name"
+                         id="e3" onmouseover="mouse5()" onmousedown="mouse6()">
+                    </td>
+                    <td><label id="l3" style="color:red;visibility:hidden">Invalid Last Name</label></td>
+                </tr>
+                <tr onmouseover="fullnamee()">
+                    <td>
+                        <big><b>Full Name:</b></big>
+                    </td>
+                    <td>
+                        <b id="e4"></b>
+                    </td>
+                    <td><label id="l3" style="color:red;visibility:hidden">Invalid Last Name</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <big><b>Country:</b></big>
+                    </td>
+                    <td><select id="ii">
+                        <option id="o1">India(+91)</option>
+                        <option id="o2">USA(+0)</option>
+                    </select>
+                </tr>
+                  <tr>
+                    <td>
+                        <big><b>Phone No:</b></big>
+                    </td>
+                    <td>
+                        <input type="text" id="e5" onmouseover="mouse7()" onmousedown="mouse8()">
+                    </td>
+                    <td><label id="l4" style="color:red;visibility:hidden">Invalid phone number</label></td>
+                </tr> 
+                <tr>
+                    <td>
+                        <big><b>Email:</b></big>
+                    </td>
+                    <td>
+                        <input type="email" id="e6" required onmouseover="mouse9()" onmousedown="mouse10()">
+                    </td>
+                    <td><label id="l5" style="color:red;visibility:hidden">Invalid enail</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <big><b>Password:</b></big>
+                    </td>
+                    <td>
+                        <input type="password" id="e7" onmouseover="mouse11()" onmousedown="mouse12()">
+                <img src="hiddeneye.jpg" id="img" height="10px" width="20px" onclick="img2()">
+            </td>
+                    <td><label id="l6" style="color:red;visibility:hidden">Invalid password</label></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <big><b>Date Of Birth:</b></big>
+                    </td>
+                    <td>
+                        <input type="date" id="e10">
+                    </td>
+                </tr>
+                <tr onmouseover="age1()">
+                    <td><big><b>Age:</b></big><b id="age"></b></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </center>
+<center>
+        <div id="dd" class="div1">
+                    <form id="myform">
+                    <b><big>Hobbies:</big></b><input type="text" id="cc1">
+                     <input type="submit" value="ADD">
+                        </form>
+                    <b>The Hobbies are:</b>
+                        <ul id="lists">
+                            <li>Reading<button class="delete">X</button></li>
+                        </ul>
+                    </div>
+                </center>
+    <center>
+                            <div class="div1">
+                                <form action="\js.php" method="post" onsubmit="return validation();" onreset="return reset_ok();">
+                                <table>
+            <tr>
+                    <td><big><b>Gender:</b></big></td>
+                    <td><input type="radio" id="male"><label for="male">Male</label>
+                    <input type="radio" id="female"><label for="female">Female</label></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><big><b><label for="e8">Upload your image:</label></b></big>
+                        <input type="file" id="e8" accept="image/jpg/png">
+                    </td>
+                    <td><label id="l7" style="color:red;visibility:hidden">Invalid image</label></td>
+                </tr>
+
+                 <tr>
+                    <td><big><b>Address:</b></big></td>
+                    <td>
+                        <textarea id="e9" rows="6" cols="47" onmouseover="mouse13()" onmousedown="mouse14()"></textarea>
+                    </td>
+                    <td><label id="l8" style="color:red;visibility:hidden">Invalid Address</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id="agree" onclick="agree1()">I agree to the terms and conditions</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+                    </tr>
+                 <tr>
+                    <td>
+                        <button type="reset"="Reset" id="e12">Reset</button>
+                    </td>
+                    <td>
+                        <button type="submit"="Submit" id="e13">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </center>
+
+    </div>
+  </nav>
+  <footer id="footer">
+    <small><p><b>copy right &copy;2022 designed and developed by SWAROOPA</b></p></small>
+    <div class="foot">
+            <bold>View Count:</bold>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8012171&style=0006&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter" border="0"/>
+</div>
+    </footer>
+  <script type="text/javascript">
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    searchBox.addEventListener("click", ()=>{
+      navbar.classList.toggle("showInput");
+      if(navbar.classList.contains("showInput")){
+        searchBox.classList.replace("bx-search" ,"bx-x");
+      }else {
+        searchBox.classList.replace("bx-x" ,"bx-search");
+      }
+    });
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+    navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+    navLinks.style.left = "-100%";
+    }
+    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+    htmlcssArrow.onclick = function() {
+     navLinks.classList.toggle("show1");
+    }
+    let moreArrow = document.querySelector(".more-arrow");
+    moreArrow.onclick = function() {
+     navLinks.classList.toggle("show2");
+    }
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+     navLinks.classList.toggle("show3");
+    }
+    </script>
+    <script type="text/javascript" src="jquery.js">
+        $("#profileImage").click(function(e) {
+            $("#imageUpload").click();
+        });
+        function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                  $('#profileImage').attr('src', 
+                     window.URL.createObjectURL(uploader.files[0]) );
+            }
+        }
+        $("#imageUpload").change(function(){
+            fasterPreview( this );
+        });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      </script> 
+      <script type="text/javascript">
+        let age=0;
+        let count=0;
+           function validation()
+           {
+               var fn=document.getElementById("e1").value;
+               var r1=/^\w+$/;
+               var mn=document.getElementById("e2").value;
+               var ln=document.getElementById("e3").value;
+               var adrs=document.getElementById("e9").value;
+               var pw=document.getElementById("e7").value;
+               var mail=document.getElementById("e6").value;
+               var ph=document.getElementById("e5").value;
+               var cntry=document.getElementById("ii").value;
+               var ch1=document.getElementById("eh1").checked;
+               var ch2=document.getElementById("eh2").checked;
+               var ch3=document.getElementById("eh3").checked;
+               var ch4=document.getElementById("eh4").checked;
+                var r3=/^\d{10}$/;
+                var r4=/^\d{3}-\d{4}-\d{3}$/;
+                var r5=/^\w+(.|-|_)?\w+@(\w|-|.)+\.?\w+?\.\w{2,3}$/;
+                if(fn.length<4)
+                {
+                document.getElementById("e1").style.border="5px solid red";
+                document.getElementById("l1").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l1").style.display="none";
+                document.getElementById("e1").style.border="1px solid black";},4000);
+                count++;
+                 return false;
+            }
+               if(ln.length<4)
+             {
+                document.getElementById("e3").style.border="5px solid red";
+                document.getElementById("l3").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l3").style.display="none";
+                document.getElementById("e3").style.border="1px solid black";},4000);
+                count++;
+               return false
+        }
+             if(!cntry){
+                count++;
+            return false;
+            }
+    if(cntry=="India(+91)")
+    {
+        if(!r3.test(ph))
+        {
+            document.getElementById("e5").style.border="5px solid red";
+           document.getElementById("l4").style.visibility="visible";
+           setTimeout(()=>{document.getElementById("l4").style.display="none";
+            document.getElementById("e5").style.border="1px solid black";},4000);
+           count++;
+           return false;
+        }
+     }
+     if(cntry=="USA(+0)"){
+        if(!r4.test(ph))
+        {
+            document.getElementById("e5").style.border="5px solid red";
+           document.getElementById("l4").style.visibility="visible";
+           setTimeout(()=>{document.getElementById("l4").style.display="none";
+            document.getElementById("e5").style.border="1px solid black";},4000);
+           count++;
+           return false;
+        }
+     }
+            if(!r1.test(fn))
+            {
+                document.getElementById("e1").style.border="5px solid red";
+                document.getElementById("l1").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l1").style.display="none";
+                document.getElementById("e1").style.border="1px solid black";},5000);
+                count++;
+               return false;
+            }
+                if(!r1.test(ln))
+             {
+                document.getElementById("e3").style.border="5px solid red";
+                document.getElementById("l3").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l3").style.display="none";
+                document.getElementById("e3").style.border="1px solid black";},5000);
+                count++;
+                return false;
+            }
+                 if(!r1.test(mn))
+             {
+                document.getElementById("e2").style.border="5px solid red";
+                document.getElementById("l2").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l2").style.display="none";
+                document.getElementById("e2").style.border="1px solid black";},4000);
+                count++;
+                 return false;
+                }
+             if(adrs==""){
+                document.getElementById("e9").style.border="5px solid red";
+                 document.getElementById("l8").style.visibility="visible";
+                 setTimeout(()=>{document.getElementById("l8").style.display="none";
+                document.getElementById("e9").style.border="1px solid black";},4000);
+                 count++;
+                 return false;
+             }
+             if(pw=="" || pw.length<7)
+             {
+                document.getElementById("e7").style.border="5px solid red";
+                document.getElementById("l6").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l6").style.display="none";
+                document.getElementById("e7").style.border="1px solid black";},4000);
+                count++;
+                return false;
+            }
+             if(!r5.test(mail))
+            {
+                document.getElementById("e6").style.border="5px solid red";
+                document.getElementById("l5").style.visibility="visible";
+                setTimeout(()=>{document.getElementById("l5").style.display="none";
+                document.getElementById("e6").style.border="1px solid black";},4000);
+                count++;
+               return false;
+            }
+            if(count==0)
+            {
+                var sub=confirm("Are you sure submitting the form?");
+                if(!sub)
+                {
+                    return false;
+                }
+                else{
+                    return true;
+                }   
+            }
+            else{
+                return false;
+            }
+        }
+        function fullnamee()
+        {
+			let v1=document.getElementById("e1").value;
+			let v2=document.getElementById("e3").value;
+			document.getElementById("e4").innerText=v1+" "+v2;
+		}
+        function agree1(){
+			let v3=document.getElementById("agree").checked;
+			if(!v3){
+				document.getElementById("e13").disabled=true;
+			}
+			else{
+				document.getElementById("e13").disabled=false;
+			}
+		}
+    function age1(){
+			let date=new Date(document.getElementById("e10").value);
+			let year=date.getFullYear();
+			let date_c=new Date();
+			let year_c=date_c.getFullYear();
+		 	age=year_c-year;
+		 	document.getElementById("age").innerText=age;
+		}
+        function img2(){
+			if(document.getElementById("e7").type=='password'){
+				document.getElementById("e7").type="text";
+				document.getElementById("img").src="eyeicon.jpg";
+				
+			}
+			else{
+				document.getElementById("e7").type="password";
+				document.getElementById("img").src="hiddeneye.jpg";
+			}
+        }
+        function reset_ok(){
+        var con=confirm("Click ok or cancel to reset");
+        if(!con){
+            return false;
+        }
+    }
+    function mouse1()
+    {
+        document.getElementById("e1").style.backgroundColor="blue";
+    }
+    function mouse2()
+    {
+        document.getElementById("e1").style.backgroundColor="white";
+    }
+    function mouse3()
+    {
+        document.getElementById("e2").style.backgroundColor="blue";
+    }
+    function mouse4()
+    {
+        document.getElemenById("e2").style.backgroundColor="white";
+    }
+    function mouse5()
+    {
+        document.getElementById("e3").style.backgroundColor="blue";
+    }
+    function mouse6()
+    {
+        document.getElementById("e3").style.backgroundColor="white";
+    }
+    function mouse7()
+    {
+        document.getElementById("e5").style.backgroundColor="blue";
+    }
+    function mouse8()
+    {
+        document.getElementById("e5").style.backgroundColor="white";
+    }
+    function mouse9()
+    {
+        document.getElementById("e6").style.backgroundColor="blue";
+    }
+    function mouse10()
+    {
+        document.getElementById("e6").style.backgroundColor="white";
+    }
+    function mouse11()
+    {
+        document.getElementById("e7").style.backgroundColor="blue";
+    }
+    function mouse12()
+    {
+        document.getElementById("e7").style.backgroundColor="white";
+    }
+    function mouse13()
+    {
+        document.getElementById("e9").style.backgroundColor="blue";
+    }
+    function mouse14()
+    {
+        document.getElementById("e9").style.backgroundColor="white";
+    }
+            </script>
+            <script type="text/javascript">
+                var myform=document.getElementById("myform");
+                myform.addEventListener('submit',addItem,false);
+                var lists=document.getElementById("lists");
+                lists.addEventListener("click",removeItem,false)
+                
+                function addItem(e)
+                {
+                e.preventDefault();
+                var f=document.getElementById("cc1").value;
+                var l=document.createElement("li");
+                var text=document.createTextNode(f);
+                l.appendChild(text);
+                var dbtn=document.createElement("button");
+                dbtn.setAttribute("class","delete");
+                var dtext=document.createTextNode("X");
+                dbtn.appendChild(dtext);
+                l.appendChild(dbtn);
+                lists.appendChild(l);
+                }
+                function removeItem(e){
+                    if(e.target.classList.contains("delete"));
+                    var li=e.target.parentElement;
+                    lists.removeChild(li);
+                }
+                </script>
+</body>
+</html>
